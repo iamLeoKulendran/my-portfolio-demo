@@ -1,28 +1,46 @@
-# Welcome to my Porfolio site
+# iamLeo Portfolio
 
+## Project Summary
+This project involved creating a portfolio website using advanced prompt engineering techniques and leveraging language models such as Local-LLM (Quewn Corder and Deepseek) and GitHub Copilot. The application was built using React, Tailwind CSS, and Vite. Despite having limited React experience, the project was rapidly developed in less than a day by modifying an existing template with custom content and UI enhancements.
 
-Follow these steps:
+## Development Process
+- Modified an existing template with personalized content
+- Implemented responsive design adjustments
+- Debugged routing and networking issues
+- Set up automated deployment with GitHub Actions
+- Configured DNS settings with Vercel
+- Deployed to a custom domain (iamleo.net)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Technologies Used
+- **Frontend**: React, Tailwind CSS
+- **Build Tool**: Vite
+- **Deployment**: GitHub Actions, Vercel
+- **AI Assistance**: Local-LLM, GitHub Copilot
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Features
+- Modern, responsive design
+- Portfolio showcase
+- Contact information
+- Skills section
+- Project highlights
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Getting Started
+```bash
+# Clone the repository
+git clone [repository-url]
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navigate to project directory
+cd iamLeo-Porfolio-V2.1
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-## What technologies are used for this project?
+## Live Site
+Visit [iamleo.net](https://iamleo.net) to see the portfolio in action.
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- Tailwind CSS
-
+## Contact
+Feel free to reach out for collaborations or inquiries!
