@@ -1,10 +1,9 @@
-
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { ThemeToggle } from "./ThemeToggle";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +40,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold tracking-tight hover-effect">
+            <Link
+              to="/"
+              className="text-2xl font-bold tracking-tight hover-effect"
+            >
               <span className="sr-only">DevOps Portfolio</span>
               <div className="flex items-center">
                 <span>iamLeo</span>
@@ -73,7 +75,11 @@ const Navbar = () => {
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>

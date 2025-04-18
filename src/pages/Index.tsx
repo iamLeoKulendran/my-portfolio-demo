@@ -1,9 +1,8 @@
-
-import Layout from "@/components/Layout";
-import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
-import FeaturedProjects from "@/components/FeaturedProjects";
 import ContactSection from "@/components/ContactSection";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import Hero from "@/components/Hero";
+import Layout from "@/components/Layout";
+import Skills from "@/components/Skills";
 
 const Index = () => {
   return (

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 interface ProjectFiltersProps {
@@ -7,9 +6,16 @@ interface ProjectFiltersProps {
   onTagSelect: (tag: string | null) => void;
 }
 
-const ProjectFilters = ({ tags, selectedTag, onTagSelect }: ProjectFiltersProps) => {
+const ProjectFilters = ({
+  tags,
+  selectedTag,
+  onTagSelect,
+}: ProjectFiltersProps) => {
   return (
-    <div className="flex flex-wrap justify-center gap-2 mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
+    <div
+      className="flex flex-wrap justify-center gap-2 mb-8 animate-fade-in opacity-0"
+      style={{ animationDelay: "0.5s" }}
+    >
       <Button
         variant={selectedTag === null ? "default" : "outline"}
         onClick={() => onTagSelect(null)}
@@ -17,7 +23,7 @@ const ProjectFilters = ({ tags, selectedTag, onTagSelect }: ProjectFiltersProps)
       >
         All Projects
       </Button>
-      {tags.map(tag => (
+      {tags.map((tag) => (
         <Button
           key={tag}
           variant={selectedTag === tag ? "default" : "outline"}

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 
 interface SkillCategory {
   name: string;
@@ -9,41 +9,47 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     name: "Containerization & Orchestration",
-    skills: ["Docker", "Kubernetes", "EKS"]
+    skills: ["Docker", "Kubernetes", "EKS"],
   },
   {
     name: "Infrastructure as Code (IaC)",
-    skills: ["Terraform", "Ansible", "Vagrant"]
+    skills: ["Terraform", "Ansible", "Vagrant"],
   },
   {
     name: "Cloud Platforms",
-    skills: ["AWS", "Azure", "GCP"]
+    skills: ["AWS", "Azure", "GCP"],
   },
   {
     name: "CI/CD & Automation",
-    skills: ["Jenkins", "GitHub Actions", "ArgoCD"]
+    skills: ["Jenkins", "GitHub Actions", "ArgoCD"],
   },
   {
     name: "Monitoring & Observability",
-    skills: ["Prometheus", "Grafana"]
+    skills: ["Prometheus", "Grafana"],
   },
   {
     name: "Version Control & Collaboration",
-    skills: ["Git", "GitHub", "GitLab"]
+    skills: ["Git", "GitHub", "GitLab"],
   },
   {
     name: "Databases",
-    skills: ["MySQL", "PostgreSQL", "MongoDB"]
+    skills: ["MySQL", "PostgreSQL", "MongoDB"],
   },
   {
     name: "Scritping & Programming",
-    skills: ["Bash Scripting","Python Scripting (basic)","Go (basic)","Java", "C", "C#" ]
+    skills: [
+      "Bash Scripting",
+      "Python Scripting (basic)",
+      "Go (basic)",
+      "Java",
+      "C",
+      "C#",
+    ],
   },
   {
     name: "AI/ML",
-    skills: ["Prompt Engineering", "LLMOps (Basic)", "MLOps (Basic)", "Ollama"]
+    skills: ["Prompt Engineering", "LLMOps (Basic)", "MLOps (Basic)", "Ollama"],
   },
-  
 ];
 
 const Skills = () => {
@@ -52,16 +58,16 @@ const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
-  
+
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
-  
+
   return (
     <section id="skills-section" className="py-16 bg-muted/30">
       <div className="section-container">
@@ -77,7 +83,7 @@ const Skills = () => {
             Technologies and tools I work with to deliver robust solutions
           </p>
         </motion.div>
-        
+
         <motion.div
           variants={containerVariants}
           initial="hidden"

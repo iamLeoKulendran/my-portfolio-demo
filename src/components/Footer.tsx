@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -19,36 +18,56 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Navigation</h3>
             <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</Link>
-              <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
-              <Link to="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
-              <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+              <Link
+                to="/"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                to="/projects"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Projects
+              </Link>
+              <Link
+                to="/contact"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Contact
+              </Link>
             </nav>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Connect</h3>
             <div className="flex space-x-4">
-              <a 
-                href="https://github.com/iamLeoKulendran" 
-                target="_blank" 
+              <a
+                href="https://github.com/iamLeoKulendran"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-6 w-6" />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/leo-kulendran/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/leo-kulendran/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a 
-                href="mailto:leosiraj@gmail.com" 
+              <a
+                href="mailto:leosiraj@gmail.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email"
               >
